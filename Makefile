@@ -11,3 +11,6 @@ bump:
 clean:
 	go clean -modcache
 	tidy
+
+all:
+	docker buildx build -f Dockerfile -t orders:1.0 .
